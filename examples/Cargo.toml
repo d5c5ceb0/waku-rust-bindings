@@ -2,4 +2,4 @@
 
 members = [
     "basic"
-, "tic-tac-toe", "tic-tac-toe-gui"]
+, "hello-world", "tic-tac-toe", "tic-tac-toe-gui"]
