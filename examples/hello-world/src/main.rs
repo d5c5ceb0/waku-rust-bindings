@@ -47,18 +47,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             match event {
                 Event::WakuMessage(evt) => {
                     println!("WakuMessage event received: {:?}", evt.waku_message);
-                    // let message = evt.waku_message;
-                    // let payload = message.payload.to_vec();
-                    // match from_utf8(&payload) {
-                    //     Ok(msg) => {
-                    //         //  Lock succeeded, proceed to send the message
-                    //         println!("Message received {}", msg);
-                    //     }
-                    //     Err(e) => {
-                    //         eprintln!("Failed to decode payload as UTF-8: {}", e);
-                    //         // Handle the error as needed, or just log and skip
-                    //     }
-                    // }
                 }
                 Event::Unrecognized(err) => panic!("Unrecognized waku event: {:?}", err),
                 _ => panic!("event case not expected"),
